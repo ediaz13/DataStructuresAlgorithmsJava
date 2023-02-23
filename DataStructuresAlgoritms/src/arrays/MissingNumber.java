@@ -16,7 +16,9 @@ public class MissingNumber {
         for (int i: intArray) {
             sum1 += i;
         }
-        sum2 = 100*(100+1)/2;
+        int completeLength = intArray.length + 1;
+
+        sum2 = completeLength*(completeLength+1)/2;
         int difference = sum2 - sum1;
         System.out.println("Missing Number is " + difference);
 
